@@ -1,6 +1,6 @@
-# Maquette 3
+# RareDream
 
-
+RareDream is a model made in less than 1 hour. It is inspired from [Driblle](https://dribbble.com/shots/17780025-NFT-Art-Marketplace-concept/attachments/12948128?mode=media).
 
 ## Installation
 
