@@ -7,7 +7,7 @@
 Clone this repository : 
 
 ```bash
-git clone 
+git clone git@github.com:AugustinBriolon/Maquette3.git
 ```
 
 ## Run Sass
@@ -16,4 +16,4 @@ sass --watch assets/style/sass/main.scss:assets/style/css/main.css
 ```
 
 ## Contributing
-BRIOLON Augustin# Maquette3
+BRIOLON Augustin

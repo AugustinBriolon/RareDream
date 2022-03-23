@@ -1,0 +1,206 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Abstract
+	- Mixins
+	-Variables
+
+# Base
+	- Typography
+	- Elements
+
+# Components
+	- Button
+
+# Layouts
+
+# Main.scss
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Abstract
+--------------------------------------------------------------*/
+/* Colors
+--------------------------------------------- */
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  font-family: "Comfortaa", cursive;
+}
+
+/* Typography
+--------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Spartan", sans-serif;
+}
+
+/* Elements
+--------------------------------------------- */
+/* Body
+--------------------------------------------- */
+body {
+  background: #000;
+}
+
+/* Inherit box-sizing to more easily change it's value on a component level. */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/* Button
+--------------------------------------------- */
+/* Button
+--------------------------------------------- */
+.btn-empty {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: #000;
+  border: 1px solid #9F8F65;
+  text-align: center;
+  color: #9F8F65;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+/* First Section
+--------------------------------------------- */
+.head-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0 100px;
+}
+.head-container .head-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #fff;
+}
+.head-container .head-left .title {
+  font-size: calc(5em + 10px);
+  margin-top: 100px;
+}
+.head-container .head-left p {
+  opacity: 0.6;
+  margin: 50px 0;
+  line-height: 40px;
+}
+.head-container .head-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.head-container .head-right .head-img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #9F8F65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-container .head-right .head-img .img-head {
+  width: 150px;
+  height: 150px;
+}
+.head-container .head-right .head1 {
+  transform: translate(120px, 80px);
+  border-radius: 150px;
+}
+.head-container .head-right .head1 .head-img1 {
+  border-radius: 150px;
+}
+.head-container .head-right .head2,
+.head-container .head-right .head-img2 {
+  border-bottom-right-radius: 150px;
+  border-top-right-radius: 150px;
+}
+.head-container .head-right .head3 {
+  transform: translate(-180px, -50px);
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections
+--------------------------------------------- */
+header {
+  margin: 20px 100px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.nav-bar .nav-logo {
+  color: #9F8F65;
+}
+.nav-bar .nav-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-bar .nav-element li {
+  margin: 10px;
+}
+.nav-bar .nav-element li a {
+  color: #9F8F65;
+  text-decoration: none;
+}
+.nav-bar .nav-element .nav-medias {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 1px solid #9F8F65;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-element .nav-medias .nav-media {
+  margin-top: 2px;
+  text-decoration: none;
+  color: #9F8F65;
+  background-color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */

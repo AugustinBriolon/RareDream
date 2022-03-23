@@ -1,0 +1,71 @@
+/* First Section
+--------------------------------------------- */
+
+.head-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+
+    .head-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: $color-text;
+
+        .title {
+            font-size: calc(5em + 10px);
+            margin-top: 100px;
+        }
+
+        p {
+            opacity: 0.6;
+            margin: 50px 0;
+            line-height: 40px;
+        }
+
+    }
+
+    .head-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        .head-img {
+            @include size(250px, 250px);
+            border: 1px solid $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .img-head {
+                @include size(150px, 150px);
+            }
+        }
+
+        .head1 {
+            transform: translate(120px, 80px);
+            border-radius: 150px;
+
+            .head-img1 {
+                border-radius: 150px;
+            }
+        }
+
+        .head2,
+        .head-img2 {
+            border-bottom-right-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+
+        .head3 {
+            transform: translate(-180px, -50px);
+        }
+    }
+}
