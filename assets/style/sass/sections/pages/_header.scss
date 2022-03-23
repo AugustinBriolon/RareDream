@@ -1,5 +1,9 @@
 header {
     margin: 20px 100px;
+    @media screen  and (max-width: 550px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .nav-bar {
@@ -9,6 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
+    @media screen  and (max-width: 800px) {
+        flex-direction: column;
+    }
 
     .nav-logo {
         color: $color-primary;
@@ -20,6 +28,11 @@ header {
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
+
+        @media screen  and (max-width: 800px) {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
 
         li {
             margin: 10px;

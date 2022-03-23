@@ -7,6 +7,11 @@
     flex-direction: row;
     margin: 0 100px;
 
+    @media screen  and (max-width: 900px) {
+        flex-direction: column;
+        height: auto;
+    }
+
     .head-left {
         width: 50%;
         display: flex;
@@ -15,9 +20,21 @@
         justify-content: flex-start;
         color: $color-text;
 
+        @media screen  and (max-width: 900px) {
+            width: 100%;
+        }
+        @media screen  and (max-width: 650px) {
+            align-items: center;
+            justify-content: center;
+        }
+
         .title {
             font-size: calc(5em + 10px);
             margin-top: 100px;
+
+            @media screen  and (max-width: 650px) {
+                text-align: center;
+            }
         }
 
         p {
@@ -35,6 +52,13 @@
         justify-content: space-evenly;
         align-items: center;
 
+        @media screen  and (max-width: 900px) {
+            width: 100%;
+        }
+        @media screen  and (max-width: 650px) {
+            justify-content: center;
+        }
+
 
         .head-img {
             @include size(250px, 250px);
@@ -42,6 +66,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media screen  and (max-width: 650px) {
+                margin-top: 20px;
+            }
 
 
             .img-head {
@@ -51,21 +78,29 @@
 
         .head1 {
             transform: translate(120px, 80px);
-            border-radius: 150px;
+            border-radius: 15em;
+
+            @media screen  and (max-width: 650px) {
+                transform: translate(0px, 0px); 
+            }
 
             .head-img1 {
-                border-radius: 150px;
+                border-radius: 15em;
             }
         }
 
         .head2,
         .head-img2 {
-            border-bottom-right-radius: 150px;
-            border-top-right-radius: 150px;
+            border-bottom-right-radius: 15em;
+            border-top-right-radius: 15em;
         }
 
         .head3 {
             transform: translate(-180px, -50px);
+
+            @media screen  and (max-width: 650px) {
+                transform: translate(0px, 0px); 
+            }
         }
     }
 }

@@ -1,0 +1,29 @@
+.line {
+    margin: 5% 8%;
+    border: none;
+    height: 2px;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen  and (max-width: 650px) {
+        margin: 10%;
+    }
+
+    .line-svg {
+        fill: $color-primary;
+        width: 5em;
+        height: 5em;
+    }
+}
+
+.line-v {
+    margin: 0 5%;
+    height: 100%;
+    width: 1px;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
