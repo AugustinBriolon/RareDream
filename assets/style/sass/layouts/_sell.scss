@@ -1,6 +1,6 @@
 .sell-container {
-    margin: 0 100px;
-    height: 75vh;
+    margin: 50px 100px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,8 +8,8 @@
 
     @media screen  and (max-width: 900px) {
         flex-direction: column; 
-        height: 125vh;
-        margin: 0 50px;
+        height: fit-content;
+        margin: 50px;
     }
 
     .sell-product {
@@ -25,6 +25,7 @@
             border-radius: 50px;
             max-width: 80%;
             height: min-content;
+            
         }
     }
 

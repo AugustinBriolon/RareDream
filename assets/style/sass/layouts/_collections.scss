@@ -1,0 +1,87 @@
+.collection-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100Px;
+
+    .title {
+        font-size: calc(3.2em + 10px);
+        margin: 70px 0;
+    }
+}
+
+.collection-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .collection-element {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        height: fit-content;
+        color: $color-text;
+        background-color: #1d1410b6;
+        border: 1px solid $color-primary;
+        border-radius: 50px;
+
+        @media screen and (max-width: 1100px) {
+            margin: 15px;
+        }
+
+        .element {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+            padding: 3%;
+        }
+
+        .element-artist {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            transform: translate(0px, -30px);
+        }
+
+        .element-name {
+            font-size: 1.5em;
+            height: 120px;
+            padding: 10px 20px;
+        }
+
+        .element-price {
+            margin-bottom: 50px;
+        }
+
+        .element-price,
+        .element-artist-name {
+            font-size: 1em;
+            opacity: 0.7;
+        }
+
+        .element-artist-name {
+            height: 75px;
+
+            span {
+                color: $color-text2;
+            }
+        }
+    }
+}
+
+.btn-collection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+        margin-left: 10px;
+    }
+}
